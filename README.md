@@ -1,4 +1,3 @@
 # educationalERP
 
-test test
 
