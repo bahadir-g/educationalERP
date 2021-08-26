@@ -5,7 +5,7 @@ EXPOSE 9009
 WORKDIR /opt
 
 # Add & Run Microservice
-ADD okul/okul/target/pyrodit.jar /opt/
+ADD okul/okul/target/okul.jar /opt/
 ADD okul/okul/src/main/resources/application.properties /opt/
 
 
