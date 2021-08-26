@@ -45,5 +45,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: user/app:latest
+        tags: bahadirg/pyro:1.0.0
 
