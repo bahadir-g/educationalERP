@@ -36,8 +36,8 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1 
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{ secrets.DOCKER_PYRO_USERNAME }}
+        password: ${{ secrets.DOCKER_PYRO_PASSWORD }}
     
     - name: Build and push
       id: docker_build
@@ -45,5 +45,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: bahadirg/pyro:1.0.0
+        tags: repo.pyrodit.com/docker-private/pyro:2.0.0
 
