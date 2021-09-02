@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  pyrodit:
+    container_name: pyrotest
+    image: 'bahadirg/pyro:1.0.0'
+    ports:
+      - '9099:8080'
