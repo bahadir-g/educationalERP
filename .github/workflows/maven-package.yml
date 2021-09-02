@@ -55,7 +55,7 @@ jobs:
       with:
         # Remote Docker host ie (user@host)
         remote_docker_host: ubuntu@3.125.155.143
-        ssh_public_key: ${{ DOCKER_PUBLIC }}
+        ssh_public_key: ${{ secrets.DOCKER_PUBLIC }}
         # SSH private key used to connect to the docker host
         ssh_private_key: ${{ secrets.DOCKER_PRIVATE_KEY }}
         # Deployment command args.
