@@ -59,7 +59,7 @@ jobs:
         # SSH private key used to connect to the docker host
         ssh_private_key: ${{ secrets.DOCKER_PRIVATE_KEY }}
         # Deployment command args.
-        args: -d
+        args: up -d
         # Docker stack file used. Default is docker-compose.yaml
         stack_file_name: ./docker-compose.yaml
         # The ssh port of the server. Default is 22
